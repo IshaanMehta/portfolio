@@ -22,18 +22,18 @@ const Landing = ({ setSelectedPage }) => {
             before:w-11/12 before:max-w-[400px] md:before:max-w-[400px] before:h-full before:h before:border-2 before:border-blue before:z-[-1]"
           >
             <img
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-10/12 max-w-[400px]
+              className="rounded-t-[400px] saturate-100 hover:filter hover:saturate-200 transition duration-500 z-10 w-10/12 max-w-[400px]
             md:max-w-[400px]"
               alt="profile-picture"
-              src="assets/profile-image.png"
+              src="assets/profile-pic.jpg"
             />
           </div>
         ) : (
           <img
-            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-10/12 max-w-[400px]
+            className="rounded-t-[400px] saturate-100 hover:filter hover:saturate-200 transition duration-500 z-10 w-10/12 max-w-[400px]
             md:max-w-[400px]"
             alt="profile-picture"
-            src="assets/profile-image.png"
+            src="assets/profile-pic.jpg"
           />
         )}
       </div>
@@ -58,8 +58,8 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            egestas urna magna, in pretium odio varius at.
+            I'm a Fullstack web developer. I like to code things from scratch,
+            and enjoy bringing ideas to life in the browser.
           </p>
         </motion.div>
 

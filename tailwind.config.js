@@ -32,7 +32,7 @@ module.exports = {
       }
     },
     screens: {
-      xs: "480px",
+      xs: "450px",
       sm: "768px",
       md: "1060px"
     }

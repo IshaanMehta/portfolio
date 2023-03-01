@@ -6,6 +6,8 @@ import Landing from "./scenes/Landing";
 import LineGradient from "./components/LineGradient";
 import MySkills from "./scenes/MySkills";
 import Projects from "./scenes/Projects";
+import Contact from "./scenes/Contact";
+import Skillgraph from "./components/Skillgraph";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -28,7 +30,7 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto md:h-full md:mb-32 md:mt-8 xs:mb-20 xs:mt-5">
         {isAboveMediumScreens && (
           <DotGroup
             selectedPage={selectedPage}
@@ -38,12 +40,19 @@ function App() {
         <Landing setSelectedPage={setSelectedPage} />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto ">
+      <div className="w-5/6 mx-auto md:my-32 xs:my-20">
         <MySkills />
       </div>
+      <div className="w-5/6 mx-auto md:my-32 xs:my-20">
+        <Skillgraph />
+      </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto">
+      <div className="w-5/6 mx-auto md:my-32 xs:my-20">
         <Projects />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:my-32 xs:my-20">
+        <Contact />
       </div>
     </div>
   );
